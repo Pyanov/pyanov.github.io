@@ -1,0 +1,416 @@
+/* Obscure and artsy minimal design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #f5ebdf;
+    color: #000000;
+    line-height: 1.8;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.portrait {
+    width: 140px;
+    height: auto;
+    border-radius: 2px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    margin: 0;
+}
+
+header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #000000;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+.bio p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    padding-left: 20px;
+}
+
+h2::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 16px;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: '·';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+.features-list {
+    margin: 30px 0;
+}
+
+.features-list li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.features-list li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
+}
+
+a:hover {
+    border-bottom: 1px solid #333333;
+}
+
+.product-link {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.story-content p {
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+.quote-block {
+    margin: 40px 0;
+    padding: 30px 0;
+}
+
+.quote-block blockquote {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.quote-block cite {
+    font-size: 12px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.departure-note {
+    font-size: 14px !important;
+    color: #666 !important;
+    font-style: italic !important;
+    margin-top: 30px !important;
+}
+
+.press-coverage {
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.press-coverage p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.press-list {
+    margin: 0;
+}
+
+.press-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.andrew-images {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.andrew-images img {
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.video-embed {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.video-embed iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: 1px solid #e0e0e0;
+}
+
+.replika-video {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.replika-video video {
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+}
+
+.roman-images {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.roman-images img {
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #e0e0e0;
+}
+
+.section-divider {
+    margin: 60px 0;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+    position: relative;
+}
+
+.section-divider::after {
+    content: '❦';
+    display: inline-block;
+    position: relative;
+    background-color: #f5ebdf;
+    padding: 0 20px;
+}
+
+.logo-story {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.replika-logo {
+    width: 240px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.logo-story p {
+    margin: 0;
+    font-style: italic;
+    line-height: 1.7;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 40px 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-left: 20px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+h3::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+footer {
+    padding-top: 60px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer p {
+    text-align: center;
+}
+
+.section-links {
+    margin-top: 40px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-links a {
+    color: #ff6b35;
+    text-decoration: none;
+    padding: 0 5px;
+    padding-left: 0;
+    transition: color 0.2s ease;
+}
+
+.section-links a:hover {
+    color: #e55a2b;
+}
+
+.experience-link {
+    font-weight: 700 !important;
+    color: #ff6b35 !important;
+    border-bottom: 1px solid transparent !important;
+}
+
+.experience-link:hover {
+    color: #e55a2b !important;
+    border-bottom: 1px solid #e55a2b !important;
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 60px 25px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .portrait {
+        width: 100px;
+        height: auto;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    
+    .section-links {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    header h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    section {
+        margin-bottom: 60px;
+    }
+    
+    .story-content p {
+        text-align: left;
+    }
+    
+    .quote-block blockquote {
+        text-align: left;
+    }
+    
+    .andrew-images {
+        gap: 15px;
+    }
+    
+    .andrew-images img {
+        max-width: 300px;
+    }
+    
+    .video-embed iframe {
+        height: 200px;
+    }
+    
+    .replika-video video {
+        max-width: 250px;
+        height: auto;
+    }
+    
+    .roman-images {
+        gap: 15px;
+    }
+    
+    .roman-images img {
+        max-width: 100%;
+    }
+    
+    .logo-story {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .replika-logo {
+        width: 180px;
+    }
+}
