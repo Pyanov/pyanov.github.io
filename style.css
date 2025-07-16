@@ -214,7 +214,7 @@ ul li::before {
 }
 
 .replika-video video {
-    max-width: 50%;
+    max-width: 300px;
     width: auto;
     height: auto;
     margin: 0 auto;
@@ -373,7 +373,7 @@ footer a:hover {
     }
     
     .replika-video video {
-        max-width: 80%;
+        max-width: 250px;
     }
     
     .vertical-image {
