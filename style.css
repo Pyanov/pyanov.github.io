@@ -1,4 +1,4 @@
-/* Minimal courier design with grey background */
+/* Clean, modern design inspired by minimalist aesthetics */
 * {
     margin: 0;
     padding: 0;
@@ -6,162 +6,173 @@
 }
 
 body {
-    font-family: 'Courier', 'Courier New', monospace;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
     line-height: 1.6;
-    font-size: 14px;
-    letter-spacing: 0;
+    font-size: 16px;
+    letter-spacing: -0.011em;
+    font-weight: 400;
 }
 
 .container {
-    max-width: 650px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 80px 20px;
 }
 
+/* Header styles */
 .header-content {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .portrait {
-    width: 180px;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 50%;
 }
 
 header h1 {
-    font-size: 20px;
-    font-weight: 500;
-    letter-spacing: -0.5px;
-    position: relative;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
 }
 
-
-/* Ensure h1 uses system font */
-.header-content h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
-}
-
-section {
-    margin-bottom: 60px;
+/* Bio section */
+.bio {
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .bio p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #333;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation links */
+.section-links {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.section-links a {
+    color: #666;
+    text-decoration: none;
+    padding: 0 8px;
+    transition: color 0.2s ease;
+}
+
+.section-links a:hover {
+    color: #000;
+}
+
+/* Main content sections */
+section {
+    margin-bottom: 120px;
+}
+
+section:last-of-type {
+    margin-bottom: 80px;
 }
 
 h2 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    padding-left: 20px;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: -0.02em;
 }
 
-h2::before {
-    content: '>';
-    position: absolute;
-    left: 0;
-    top: 0;
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 50px 0 20px 0;
+    letter-spacing: -0.02em;
 }
 
-ul {
-    list-style: none;
-}
-
-ul li {
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
-}
-
-ul li::before {
-    content: '-';
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.features-list {
-    margin: 25px 0;
-}
-
-.features-list li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    line-height: 1.6;
-}
-
-.features-list li::before {
-    content: '*';
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
+/* Links */
 a {
-    color: #000000;
+    color: #0066CC;
     text-decoration: none;
-    border-bottom: 1px solid #000;
+    transition: opacity 0.2s ease;
 }
 
 a:hover {
-    background-color: #000;
-    color: #ffffff;
+    opacity: 0.7;
 }
 
+/* Product links */
 .product-link {
-    margin-top: 15px;
+    margin-top: 20px;
+    text-align: center;
 }
 
+.experience-link {
+    color: #0066CC !important;
+    font-weight: 500;
+}
+
+/* Story content */
 .story-content p {
-    margin-bottom: 20px;
-}
-
-.quote-block {
-    margin: 30px 0;
-    padding: 20px 0;
-}
-
-.quote-block blockquote {
-    font-size: 14px;
+    margin-bottom: 24px;
     line-height: 1.6;
-    margin-bottom: 12px;
 }
 
-.quote-block cite {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+/* Lists */
+ul {
+    list-style: none;
+    margin: 30px 0;
+}
+
+ul li {
+    margin-bottom: 16px;
+    padding-left: 24px;
+    position: relative;
+    line-height: 1.6;
+}
+
+ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
     color: #666;
 }
 
-.departure-note {
-    font-size: 11px !important;
-    color: #666 !important;
-    margin-top: 25px !important;
+.features-list {
+    margin: 30px 0;
 }
 
+.features-list li {
+    margin-bottom: 16px;
+    padding-left: 24px;
+    line-height: 1.6;
+}
+
+/* Press coverage */
 .press-coverage {
-    margin: 25px 0;
-    padding: 15px 0;
+    margin: 40px 0;
+    padding: 30px 0;
+    border-top: 1px solid #eee;
 }
 
 .press-coverage p {
-    margin-bottom: 12px;
-    font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .press-list {
@@ -169,192 +180,149 @@ a:hover {
 }
 
 .press-list li {
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin-bottom: 12px;
+    font-size: 16px;
 }
 
-.andrew-images {
-    margin: 25px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+/* Images and media */
+.andrew-images,
+.roman-images {
+    margin: 40px 0;
+    text-align: center;
 }
 
-.andrew-images img {
-    max-width: 400px;
+.andrew-images img,
+.roman-images img {
+    max-width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .video-embed {
-    margin: 25px 0;
+    margin: 40px 0;
     text-align: center;
 }
 
 .video-embed iframe {
     width: 100%;
-    max-width: 560px;
-    height: 315px;
+    max-width: 720px;
+    height: 405px;
+    border: none;
 }
 
 .replika-video {
-    margin: 25px 0;
+    margin: 40px 0;
     text-align: center;
 }
 
 .replika-video video {
-}
-
-.roman-images {
-    margin: 25px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-}
-
-.roman-images img {
     max-width: 400px;
+    width: 100%;
     height: auto;
 }
 
-.section-divider {
-    margin: 50px 0;
-    border: none;
-    text-align: center;
-    font-size: 16px;
-    color: #666;
-    position: relative;
-}
-
-.section-divider::after {
-    content: '***';
-    display: inline-block;
-    position: relative;
-    background-color: #ffffff;
-    padding: 0 15px;
-}
-
+/* Logo */
 .logo-story {
     display: flex;
     align-items: center;
-    gap: 25px;
-    margin: 25px 0;
-    padding: 15px 0;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 30px 0;
 }
 
 .replika-logo {
-    width: 200px;
+    width: 240px;
     height: auto;
-    flex-shrink: 0;
 }
 
 .logo-story p {
+    max-width: 400px;
     margin: 0;
     line-height: 1.6;
 }
 
-h3 {
-    font-size: 14px;
-    font-weight: bold;
-    margin: 30px 0 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    position: relative;
-    padding-left: 20px;
-    font-family: 'Courier', 'Courier New', monospace;
+/* Departure notes */
+.departure-note {
+    font-size: 14px !important;
+    color: #666 !important;
+    margin-top: 30px !important;
+    font-style: italic;
 }
 
-h3::before {
-    content: '>';
-    position: absolute;
-    left: 0;
-    top: 0;
+/* Section divider */
+.section-divider {
+    text-align: center;
+    margin: 80px 0;
+    font-size: 24px;
+    color: #ccc;
 }
 
+/* Footer */
 footer {
-    padding-top: 50px;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-footer p {
+    padding-top: 60px;
+    padding-bottom: 80px;
     text-align: center;
 }
 
-.section-links {
-    margin-top: 30px;
-    text-align: left;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+footer p {
+    font-size: 14px;
 }
 
-.section-links a {
+footer a {
+    color: #666;
+    margin: 0 10px;
+}
+
+footer a:hover {
     color: #000;
-    text-decoration: none;
-    padding: 0 5px;
-    padding-left: 0;
-    border-bottom: 1px solid #000;
 }
 
-.section-links a:hover {
-    background-color: #000;
-    color: #ffffff;
-}
-
-.experience-link {
-    color: #000 !important;
-    border-bottom: 1px solid #000 !important;
-}
-
-.experience-link:hover {
-    background-color: #000 !important;
-    color: #ffffff !important;
-}
-
-@media (max-width: 650px) {
+/* Mobile responsive */
+@media (max-width: 768px) {
     .container {
-        padding: 40px 20px;
-    }
-    
-    .header-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-    
-    .portrait {
-        width: 140px;
-        height: auto;
+        padding: 60px 20px;
     }
     
     header h1 {
-        font-size: 16px;
+        font-size: 32px;
     }
     
     h2 {
-        font-size: 13px;
-        letter-spacing: 0.5px;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    .bio p {
+        font-size: 16px;
+    }
+    
+    .portrait {
+        width: 160px;
+        height: 160px;
     }
     
     .section-links {
-        font-size: 10px;
-        letter-spacing: 0.5px;
+        font-size: 14px;
+        line-height: 1.8;
     }
     
+    .section-links a {
+        display: inline-block;
+        margin: 4px 0;
+    }
     
     section {
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
     
-    .andrew-images {
-        gap: 12px;
-    }
-    
-    .andrew-images img {
-        max-width: 280px;
+    .andrew-images img,
+    .roman-images img {
+        max-width: 100%;
     }
     
     .video-embed iframe {
@@ -362,25 +330,16 @@ footer p {
     }
     
     .replika-video video {
-        max-width: 250px;
-        height: auto;
-    }
-    
-    .roman-images {
-        gap: 12px;
-    }
-    
-    .roman-images img {
         max-width: 100%;
     }
     
     .logo-story {
         flex-direction: column;
         text-align: center;
-        gap: 15px;
+        gap: 20px;
     }
     
     .replika-logo {
-        width: 160px;
+        width: 180px;
     }
 }
