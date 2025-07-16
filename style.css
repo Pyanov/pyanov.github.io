@@ -214,8 +214,8 @@ ul li::before {
 }
 
 .replika-video video {
-    max-width: 300px;
-    width: auto;
+    max-width: 500px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -252,8 +252,8 @@ ul li::before {
 }
 
 .small-image {
-    max-width: 25%;
-    width: auto;
+    max-width: 25% !important;
+    width: auto !important;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -381,7 +381,7 @@ footer a:hover {
     }
     
     .replika-video video {
-        max-width: 250px;
+        max-width: 350px;
     }
     
     .vertical-image {
@@ -389,7 +389,8 @@ footer a:hover {
     }
     
     .small-image {
-        max-width: 40%;
+        max-width: 40% !important;
+        width: auto !important;
     }
     
     .logo-story {
