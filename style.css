@@ -10,7 +10,7 @@ body {
     background-color: #e8e8e8;
     color: #000000;
     line-height: 1.6;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0;
 }
 
@@ -30,7 +30,6 @@ body {
 .portrait {
     width: 120px;
     height: auto;
-    border: 1px solid #000;
 }
 
 header h1 {
@@ -56,7 +55,7 @@ section {
 }
 
 .bio p {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -115,7 +114,6 @@ ul li::before {
 a {
     color: #000000;
     text-decoration: none;
-    font-weight: bold;
     border-bottom: 1px solid #000;
 }
 
@@ -138,7 +136,7 @@ a:hover {
 }
 
 .quote-block blockquote {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.6;
     margin-bottom: 12px;
 }
@@ -175,7 +173,7 @@ a:hover {
 
 .press-list li {
     margin-bottom: 8px;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .andrew-images {
@@ -189,7 +187,6 @@ a:hover {
 .andrew-images img {
     max-width: 400px;
     height: auto;
-    border: 1px solid #000;
 }
 
 .video-embed {
@@ -201,7 +198,6 @@ a:hover {
     width: 100%;
     max-width: 560px;
     height: 315px;
-    border: 1px solid #000;
 }
 
 .replika-video {
@@ -210,7 +206,6 @@ a:hover {
 }
 
 .replika-video video {
-    border: 1px solid #000;
 }
 
 .roman-images {
@@ -224,7 +219,6 @@ a:hover {
 .roman-images img {
     max-width: 400px;
     height: auto;
-    border: 1px solid #000;
 }
 
 .section-divider {
@@ -264,7 +258,7 @@ a:hover {
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     margin: 30px 0 15px 0;
     text-transform: uppercase;
@@ -305,7 +299,6 @@ footer p {
     text-decoration: none;
     padding: 0 5px;
     padding-left: 0;
-    font-weight: bold;
     border-bottom: 1px solid #000;
 }
 
@@ -315,7 +308,6 @@ footer p {
 }
 
 .experience-link {
-    font-weight: bold !important;
     color: #000 !important;
     border-bottom: 1px solid #000 !important;
 }
