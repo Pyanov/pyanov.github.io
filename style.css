@@ -214,9 +214,11 @@ ul li::before {
 }
 
 .replika-video video {
-    max-width: 100%;
-    width: 100%;
+    max-width: 50%;
+    width: auto;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Logo */
@@ -238,6 +240,15 @@ ul li::before {
     max-width: 400px;
     margin: 0;
     line-height: 1.6;
+}
+
+/* Vertical media */
+.vertical-image {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Character grid */
@@ -362,7 +373,11 @@ footer a:hover {
     }
     
     .replika-video video {
-        max-width: 100%;
+        max-width: 80%;
+    }
+    
+    .vertical-image {
+        max-width: 80%;
     }
     
     .logo-story {

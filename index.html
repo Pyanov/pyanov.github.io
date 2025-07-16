@@ -61,7 +61,7 @@
             
             <div class="andrew-images">
                 <img src="photos/Andrew_chat.png" alt="Andrew Ng AI Avatar chat interface">
-                <img src="photos/2025-06-08 13.23.51.jpg" alt="Andrew Ng collaboration">
+                <img src="photos/2025-06-08 13.23.51.jpg" alt="Andrew Ng collaboration" class="vertical-image">
             </div>
         </section>
 
@@ -122,7 +122,7 @@
                 </div>
                 
                 <div class="replika-video">
-                    <video controls>
+                    <video controls muted playsinline>
                         <source src="photos/replika-video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -164,7 +164,7 @@
                 </p>
                 
                 <div class="replika-video">
-                    <video controls width="100%">
+                    <video controls muted playsinline>
                         <source src="photos/mindpet_video.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -236,6 +236,37 @@
             </p>
         </footer>
     </div>
+    
+    <script>
+        // Autoplay videos when they come into view
+        document.addEventListener('DOMContentLoaded', function() {
+            const videos = document.querySelectorAll('video');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5 // Play when 50% of video is visible
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const video = entry.target;
+                    
+                    if (entry.isIntersecting) {
+                        video.play().catch(e => {
+                            console.log('Autoplay prevented:', e);
+                        });
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, observerOptions);
+            
+            videos.forEach(video => {
+                observer.observe(video);
+            });
+        });
+    </script>
 </body>
 </html><!-- Force update Sun Jun  8 14:38:25 PDT 2025 -->
 <!-- Updated Sun Jun  8 14:49:32 PDT 2025 -->
