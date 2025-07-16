@@ -79,11 +79,11 @@ header h1 {
 
 /* Main content sections */
 section {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 
 section:last-of-type {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 h2 {
@@ -188,35 +188,33 @@ ul li::before {
 .andrew-images,
 .roman-images {
     margin: 40px 0;
-    text-align: center;
 }
 
 .andrew-images img,
 .roman-images img {
     max-width: 100%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
 .video-embed {
     margin: 40px 0;
-    text-align: center;
 }
 
 .video-embed iframe {
     width: 100%;
-    max-width: 720px;
-    height: 405px;
+    max-width: 100%;
+    aspect-ratio: 16/9;
     border: none;
 }
 
 .replika-video {
     margin: 40px 0;
-    text-align: center;
 }
 
 .replika-video video {
-    max-width: 400px;
+    max-width: 100%;
     width: 100%;
     height: auto;
 }
@@ -287,7 +285,7 @@ ul li::before {
 /* Section divider */
 .section-divider {
     text-align: center;
-    margin: 80px 0;
+    margin: 100px 0;
     font-size: 24px;
     color: #ccc;
 }
@@ -360,7 +358,7 @@ footer a:hover {
     }
     
     .video-embed iframe {
-        height: 200px;
+        aspect-ratio: 16/9;
     }
     
     .replika-video video {
