@@ -242,6 +242,40 @@ ul li::before {
     line-height: 1.6;
 }
 
+/* Character grid */
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.character-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.character-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Mindpet characters */
+.mindpet-characters {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.mindpet-characters img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* Departure notes */
 .departure-note {
     font-size: 14px !important;
@@ -341,5 +375,20 @@ footer a:hover {
     
     .replika-logo {
         width: 180px;
+    }
+    
+    .character-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .mindpet-characters {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .mindpet-characters img {
+        max-width: 250px;
     }
 }
