@@ -25,7 +25,7 @@
 
 body {
     font-family: 'ABC Diatype', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #FFB6C1;
+    background-color: #FFF5F7;
     color: #000000;
     line-height: 1.6;
     font-size: 16px;
@@ -41,7 +41,7 @@ body {
 
 /* Header styles */
 .header-content {
-    text-align: center;
+    text-align: left;
     margin-bottom: 80px;
 }
 
@@ -55,7 +55,7 @@ body {
 
 header h1 {
     font-family: 'ABC Synt', 'Times New Roman', 'Georgia', serif;
-    font-size: 42px;
+    font-size: 52px;
     font-weight: 400;
     letter-spacing: -0.02em;
     margin: 0;
@@ -63,7 +63,7 @@ header h1 {
 
 /* Bio section */
 .bio {
-    text-align: center;
+    text-align: left;
     margin-bottom: 80px;
 }
 
@@ -80,7 +80,7 @@ header h1 {
 /* Navigation links */
 .section-links {
     margin-top: 40px;
-    text-align: center;
+    text-align: left;
     font-size: 16px;
 }
 
@@ -106,16 +106,16 @@ section:last-of-type {
 
 h2 {
     font-family: 'ABC Synt', 'Times New Roman', 'Georgia', serif;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 400;
     margin-bottom: 40px;
-    text-align: center;
+    text-align: left;
     letter-spacing: -0.02em;
 }
 
 h3 {
     font-family: 'ABC Synt', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin: 50px 0 20px 0;
     letter-spacing: -0.02em;
@@ -135,7 +135,7 @@ a:hover {
 /* Product links */
 .product-link {
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .experience-link {
@@ -190,7 +190,7 @@ ul li::before {
 .press-coverage p {
     margin-bottom: 20px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
 }
 
 .press-list {
@@ -321,7 +321,7 @@ ul li::before {
 
 /* Section divider */
 .section-divider {
-    text-align: center;
+    text-align: left;
     margin: 100px 0;
     font-size: 24px;
     color: #ccc;
@@ -331,7 +331,7 @@ ul li::before {
 footer {
     padding-top: 60px;
     padding-bottom: 80px;
-    text-align: center;
+    text-align: left;
 }
 
 footer p {
