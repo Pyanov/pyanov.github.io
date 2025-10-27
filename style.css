@@ -25,7 +25,7 @@
 
 body {
     font-family: 'ABC Diatype', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-color: #FFF5F7;
+    background-color: #F5F5F5;
     color: #000000;
     line-height: 1.6;
     font-size: 16px;
@@ -73,8 +73,6 @@ header h1 {
     margin-bottom: 40px;
     color: #333;
     max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 /* Navigation links */
